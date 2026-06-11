@@ -9,4 +9,4 @@ These are the programming projects I built using C# and the .NET framework. They
 
 ## Personal Portfolio Projects:
 * [SonicQuotes](PersonalPortfolio_Projects/SonicQuotes) - A console application for tracking and managing quotes.
-* [ToDoList Application](PersonalPortfolio_Projects/.ToDoList_Application) - A task manager application built with C#.
+* [ToDoList Application](PersonalPortfolio_Projects/ToDoList_Application) - A task manager application built with C#.
