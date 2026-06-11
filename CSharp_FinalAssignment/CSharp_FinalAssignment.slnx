@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../FinalAssignment_SonicEdition/FinalAssignment_SonicEdition.csproj" />
+  <Project Path="CSharp_FinalAssignment.csproj" />
+</Solution>
