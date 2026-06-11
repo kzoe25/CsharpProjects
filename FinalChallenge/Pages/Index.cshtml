@@ -1,0 +1,75 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<style>
+    /* This styles the whole page background */
+    body {
+        background-color: #FDF2F7; /* Lavender Blush (a soft, dreamy pink) */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* This styles the main card in the center */
+    .cute-card {
+        background-color: #FFFFFF;
+        /* Changed to a beautiful, cool pastel pink border! */
+        border: 3px solid #FDA5D5;
+        border-radius: 20px; /* Rounded, bubbly corners */
+        padding: 40px;
+        margin-top: 50px;
+        box-shadow: 0px 8px 16px rgba(255, 182, 193, 0.4); /* Soft pink glow */
+        /* Smooth hover transition */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        /* 2. Add this brand new block right below it for the hover effect */
+        .cute-card:hover {
+            transform: translateY(-5px); /* Gently lifts the card up */
+            box-shadow: 0px 12px 24px rgba(255, 182, 193, 0.6); /* Makes the pink glow deeper */
+        }
+
+    /* Styles the welcome heading */
+    h1.display-4 {
+        color: #FF69B4; /* Hot Pink */
+        font-weight: bold;
+    }
+
+    /* Styles your custom h2 element */
+    h2.cute-heading {
+        color: #FF1493; /* Deep Pink */
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    /* Styles the time text container */
+    .time-display {
+        background-color: #FFE0F2; /* Cooler, lighter lavender-pink */
+        color: #FFFFFF; /* Soft plum/pink tone for text */
+        font-size: 1.5rem;
+        padding: 15px;
+        border-radius: 15px;
+        display: inline-block;
+        margin-top: 10px;
+        border: 2px dashed #FDA5D5; /* Soft pink dashed border */
+    }
+</style>
+
+<div class="text-center container">
+    <div class="row justify-content-center">
+        <div class="col-md-8 cute-card">
+            <h1 class="display-4">🌸 Welcome! 🌸</h1>
+
+            <!-- Your customized h2 element -->
+            <h2 class="cute-heading">Current Server Time Information</h2>
+
+            <p style="color: #6c757d;">The actual server time right now is:</p>
+
+            <!-- This pulls the time from your OnGet() method -->
+            <div class="time-display">
+                <strong>✨ @Model.ServerTime ✨</strong>
+            </div>
+        </div>
+    </div>
+</div>
