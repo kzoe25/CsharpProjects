@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="SonicQuotes/SonicQuotes.csproj" />
+  <Project Path="ToDoList_Application/ToDoList_Application.csproj" />
+</Solution>
